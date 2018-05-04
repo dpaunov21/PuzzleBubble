@@ -1,0 +1,10 @@
+C:\Users\dpaun\source\repos\PuzzleBubble\PuzzleBubble\bin\Debug\PuzzleBubble.exe.config
+C:\Users\dpaun\source\repos\PuzzleBubble\PuzzleBubble\bin\Debug\PuzzleBubble.exe
+C:\Users\dpaun\source\repos\PuzzleBubble\PuzzleBubble\bin\Debug\PuzzleBubble.pdb
+C:\Users\dpaun\source\repos\PuzzleBubble\PuzzleBubble\obj\Debug\PuzzleBubble.csprojResolveAssemblyReference.cache
+C:\Users\dpaun\source\repos\PuzzleBubble\PuzzleBubble\obj\Debug\PuzzleBubble.Form1.resources
+C:\Users\dpaun\source\repos\PuzzleBubble\PuzzleBubble\obj\Debug\PuzzleBubble.Properties.Resources.resources
+C:\Users\dpaun\source\repos\PuzzleBubble\PuzzleBubble\obj\Debug\PuzzleBubble.csproj.GenerateResource.Cache
+C:\Users\dpaun\source\repos\PuzzleBubble\PuzzleBubble\obj\Debug\PuzzleBubble.csproj.CoreCompileInputs.cache
+C:\Users\dpaun\source\repos\PuzzleBubble\PuzzleBubble\obj\Debug\PuzzleBubble.exe
+C:\Users\dpaun\source\repos\PuzzleBubble\PuzzleBubble\obj\Debug\PuzzleBubble.pdb
