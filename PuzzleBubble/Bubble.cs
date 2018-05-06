@@ -12,7 +12,7 @@ namespace PuzzleBubble {
         public Color color { get; set; }
         public Point direction { get; set; }
 
-        public Bubble(int x,int y,Color color,Point start) {
+        public Bubble(int x, int y, Color color, Point start) {
             this.Center = new Point(x, y);
             this.color = color;
             direction = start;
@@ -24,10 +24,10 @@ namespace PuzzleBubble {
             g.FillEllipse(b, Center.X - Radius, Center.Y - Radius, Radius * 2, Radius * 2);
         }
 
-        public void DrawDirection(Graphics g,Point start) {
+        public void DrawDirection(Graphics g, Point start) {
             Pen p = new Pen(new SolidBrush(color));
             g.DrawLine(p, start, direction);
-            
+
 
         }
 
@@ -38,16 +38,44 @@ namespace PuzzleBubble {
         }
         public void DirectionLeft() {
 
-            direction = new Point(direction.X - 20, direction.Y);
-
+            if (direction.Y != 660 || direction.X > 0) {
+                if (direction.X > 0 && direction.X < 510) {
+                    direction = new Point(direction.X - 20, direction.Y);
+                }
+                if (direction.X < 0) {
+                    direction = new Point(direction.X, direction.Y + 20);
+                }
+                if (direction.Y > 0 && direction.X == 510) {
+                    direction = new Point(direction.X, direction.Y - 20);
+                    if (direction.Y == 0) {
+                        direction = new Point(490, direction.Y);
+                    }
+                }
+            }
         }
 
         public void DirectionRight() {
+            if (direction.Y != 660 || direction.X < 0) {
+                if (direction.X > 0 && direction.X < 510) {
+                    direction = new Point(direction.X + 20, direction.Y);
+                }
+                if (direction.X >= 510) {
+                    direction = new Point(direction.X, direction.Y + 20);
+                }
 
-            direction = new Point(direction.X + 20, direction.Y);
+                if(direction.Y > 0 && direction.X == -10) {
+                    direction = new Point(direction.X, direction.Y - 20);
+                        if(direction.Y == 0) {
+                        direction = new Point(10, direction.Y);
+                    }
+
+
+                }
+
+
+            }
 
         }
-
 
     }
 }
